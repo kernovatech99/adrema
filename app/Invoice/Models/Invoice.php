@@ -8,15 +8,14 @@ use App\Invoice\Enums\InvoiceStatus;
 use App\Invoice\InvoiceDocument;
 use App\Invoice\InvoiceSettings;
 use App\Invoice\RememberDocument;
-use App\Invoice\Scopes\InvoiceFilterScope;
 use App\Member\Member;
 use App\Payment\Subscription;
 use Database\Factories\Invoice\Models\InvoiceFactory;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Support\Collection;
 use Laravel\Scout\Searchable;
 use stdClass;
 

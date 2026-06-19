@@ -30,7 +30,7 @@ class MemberNewInvoiceAction
      */
     public function handle(Member $member, Subscription $subscription, int $year): array
     {
-        $invoice = Invoice::createForMember($member, Member::where('id', $member->id)->get(), $year, $subscription);
+        $invoice = Invoice::createForMember($member, collect([$member]), $year, $subscription);
 
         return [
             ...$invoice->getAttributes(),
