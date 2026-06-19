@@ -47,7 +47,7 @@ class Invoice extends Model
     /**
      * @param Collection<int, Member> $members
      */
-    public static function createForMember(Member $member, Collection $members, int $year, Subscription $subscription = null): self
+    public static function createForMember(Member $member, Collection $members, int $year, ?Subscription $subscription = null): self
     {
         $invoice = new self([
             'to' => [
