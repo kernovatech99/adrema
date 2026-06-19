@@ -3,8 +3,6 @@
 namespace App\Invoice;
 
 use App\Invoice\Models\Invoice;
-use App\Payment\Payment;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Str;
 use Zoomyboy\Tex\Document;
 use Zoomyboy\Tex\Engine;
