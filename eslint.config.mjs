@@ -30,10 +30,7 @@ export default typescriptEslint.config(
             'vue/multi-word-component-names': 'off',
             'vue/max-attributes-per-line': 'off',
             'vue/singleline-html-element-content-newline': 'off',
-            "vue/first-attribute-linebreak": ["error", {
-                "singleline": "beside",
-                "multiline": "beside"
-            }],
+            'vue/first-attribute-linebreak': 'off',
             'vue/no-undef-properties': ['error', {
                 'ignores': ['/^\\$/']
             }]
