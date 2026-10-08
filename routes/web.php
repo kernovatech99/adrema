@@ -22,6 +22,7 @@ use App\Fileshare\Actions\FileshareStoreAction;
 use App\Fileshare\Actions\FileshareUpdateAction;
 use App\Fileshare\Actions\ListFilesAction;
 use App\Form\Actions\ExportAction as ActionsExportAction;
+use App\Form\Actions\FormCleanupAction;
 use App\Form\Actions\FormCopyAction;
 use App\Form\Actions\FormDestroyAction;
 use App\Form\Actions\FormGenerateLaterlinkAction;
@@ -167,6 +168,7 @@ Route::group(['middleware' => 'auth:web'], function (): void {
     Route::get('/form', FormIndexAction::class)->name('form.index');
     Route::patch('/form/{form}', FormUpdateAction::class)->name('form.update');
     Route::delete('/form/{form}', FormDestroyAction::class)->name('form.destroy');
+    Route::delete('/form/{form}/cleanup', FormCleanupAction::class)->name('form.cleanup');
     Route::post('/formtemplate', FormtemplateStoreAction::class)->name('formtemplate.store');
     Route::patch('/formtemplate/{formtemplate}', FormtemplateUpdateAction::class)->name('formtemplate.update');
     Route::delete('/formtemplate/{formtemplate}', FormtemplateDestroyAction::class)->name('formtemplate.destroy');

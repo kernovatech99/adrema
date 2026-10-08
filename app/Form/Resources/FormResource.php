@@ -65,6 +65,7 @@ class FormResource extends JsonResource
                 'participant_root_index' => route('form.participant.index', ['form' => $this->getModel(), 'parent' => -1]),
                 'update' => route('form.update', $this->getModel()),
                 'destroy' => route('form.destroy', $this->getModel()),
+                'cleanup' => route('form.cleanup', $this->getModel()),
                 'is_dirty' => route('form.is-dirty', $this->getModel()),
                 'frontend' => str(app(FormSettings::class)->registerUrl)->replace('{slug}', $this->slug),
                 'export' => route('form.export', $this->getModel()),
