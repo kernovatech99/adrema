@@ -1,5 +1,9 @@
 # Letzte Änderungen
 
+### 1.12.29
+
+-   Veranstaltungen können nun "bereinigt", sprich alle TN gelöscht werden
+
 ### 1.12.27
 
 -   Bei Rechnungs-und Erinnerungsmails wird nun der Stammesname angezeigt. Zudm kann eine ReplyTo gesetzt werden, wenn gewünscht
