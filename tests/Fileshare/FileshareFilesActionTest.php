@@ -22,11 +22,11 @@ class FileshareFilesActionTest extends FileshareTestCase
             'parent' => null,
         ])
             ->assertJsonCount(2, 'data')
-            ->assertJsonPath('data.0.name', 'pictures')
-            ->assertJsonPath('data.0.path', '/pictures')
+            ->assertJsonPath('data.0.name', 'lala')
+            ->assertJsonPath('data.0.path', '/lala')
             ->assertJsonPath('data.0.parent', '/')
-            ->assertJsonPath('data.1.name', 'lala')
-            ->assertJsonPath('data.1.path', '/lala')
+            ->assertJsonPath('data.1.name', 'pictures')
+            ->assertJsonPath('data.1.path', '/pictures')
             ->assertJsonPath('data.1.parent', '/');
     }
 
@@ -92,11 +92,11 @@ class FileshareFilesActionTest extends FileshareTestCase
             'parent' => null,
         ])
             ->assertJsonCount(2, 'data')
-            ->assertJsonPath('data.0.name', 'pictures')
-            ->assertJsonPath('data.0.path', '/pictures')
+            ->assertJsonPath('data.0.name', 'lala')
+            ->assertJsonPath('data.0.path', '/lala')
             ->assertJsonPath('data.0.parent', '/')
-            ->assertJsonPath('data.1.name', 'lala')
-            ->assertJsonPath('data.1.path', '/lala')
+            ->assertJsonPath('data.1.name', 'pictures')
+            ->assertJsonPath('data.1.path', '/pictures')
             ->assertJsonPath('data.1.parent', '/');
     }
 
