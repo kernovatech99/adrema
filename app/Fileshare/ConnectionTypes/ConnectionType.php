@@ -41,7 +41,7 @@ abstract class ConnectionType extends Data
     {
         $filesystem = $this->getFilesystem();
 
-        return collect($filesystem->directories($parent ?: '/'))->sort()->toArray();
+        return collect($filesystem->directories($parent ?: '/'))->sort()->values()->toArray();
     }
 
     /**
