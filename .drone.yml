@@ -146,7 +146,7 @@ steps:
           - composer install --ignore-platform-reqs --no-dev
 
     - name: compress
-      image: php:8.1.6
+      image: php:8.3.36
       commands:
           - apt-get update -yqq
           - apt-get install -yqq zip tar
