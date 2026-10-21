@@ -27,7 +27,6 @@ services:
             timeout: 10s
             retries: 5
         volumes:
-            - ./oc_tmp/files:/mnt/data
             - ./08-skeleton.sh:/etc/entrypoint.d/08-skeleton.sh
 
     mariadb:
@@ -44,8 +43,6 @@ services:
             interval: 10s
             timeout: 5s
             retries: 5
-        volumes:
-            - ./oc_tmp/db:/var/lib/mysql
 
     nextclouddb:
         image: mariadb:10.6
@@ -55,8 +52,6 @@ services:
             interval: 10s
             timeout: 5s
             retries: 5
-        volumes:
-            - ./oc_tmp/ncdb:/var/lib/mysql
         environment:
             - MYSQL_ROOT_PASSWORD=secret
             - MYSQL_PASSWORD=secret
